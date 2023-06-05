@@ -45,7 +45,7 @@ impl LcGrand {
         (zi >> 7 | 1) as f64 / 16_777_216.0
     }
 
-    pub fn expon(&mut self, media: f64) -> f64 {
-        -media * self.generate(0).ln()
+    pub fn expon(&mut self, mean: f64) -> f64 {
+        -mean * self.generate(0).ln()
     }
 }
